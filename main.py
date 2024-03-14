@@ -57,24 +57,6 @@ def generate_distance_matrix():
 
 
 def analyze():
-    # top_100 = np.load('./results/top_100.npy')
-    # bottom_100 = np.load('./results/bottom_100.npy')
-    #
-    # print('Most common review statuses in top 100:',
-    #       np.unique(top_100[:, 0], return_counts=True))
-    # print('Most common review statuses in bottom 100:',
-    #       np.unique(bottom_100[:, 0], return_counts=True))
-    #
-    # print('Most common classifications in top 100:',
-    #       np.unique(top_100[:, 1], return_counts=True))
-    # print('Most common classifications in bottom 100:',
-    #       np.unique(bottom_100[:, 1], return_counts=True))
-    #
-    # print()
-    # print()
-    # print('10 of top 100', top_100[0:10, :])
-    # print()
-    # print('10 of botton 100', bottom_100[0:10, :])
 
     sorted_submissions = np.load('./results/sorted_submissions.npy')
     print(sorted_submissions[0:10, :])
@@ -90,5 +72,5 @@ def analyze():
         print(classification, avg)
 
 
-# generate_distance_matrix()
+generate_distance_matrix()
 analyze()
